@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 10vh ;
+    background-color: rgb(238, 77, 77);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 60px;
+    
+}
+
+.dropdown{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-right: 30px;
+    display: none;
+}
+
+.yellow{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(235, 221, 23);
+}
+
+.orange{
+    width: 100vw;
+    height: 30vh;
+    background-color:orange ;
+}
+
+.green{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgba(2, 160, 2, 0.879);
+}
+
+.logo{
+    color: white;
+}
+
+.yellow, .orange, .green{
+    display: flex;
+    flex-direction: column;
+}
+
+h2, p{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header{
+        background-color: rgb(247, 104, 152);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yellow{
+        background-color: rgb(243, 68, 98);
+    }
+
+    .orange{
+        background-color: rgb(67, 67, 239);
+    }
+
+    .green{
+        background-color: blue;
+    }
+
+    h2, p{
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 767px ){
+     header{
+        background-color: rgb(108, 108, 243);
+     }
+
+     .yellow{
+        background-color: rgb(112, 250, 243);
+     }
+
+     .orange{
+        background-color: rgb(248, 103, 241);
+     }
+
+     .green{
+        background-color: rgb(32, 3, 90);
+     }
+
+     h2, p{
+        color: white;
+     }
+
+     .dropdown{
+        display: block;
+     }
+
+     .yellow, .green, .orange{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        
+     }
+
+     p{
+        margin-right: 10px;
+        
+     }
+}
+
+
